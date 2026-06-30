@@ -65,7 +65,7 @@
     .form-group label { display: block; font-weight: 500; margin-bottom: 6px; color: var(--secondary-color); }
     .form-group input, .form-group textarea { width: 100%; padding: 12px; border: 1px solid #dcd1c4; border-radius: 8px; font-size: 1rem; background-color: var(--bg-color); }
     .form-group input:focus, .form-group textarea:focus { outline: none; border-color: var(--primary-color); background-color: var(--white); }
-    .btn-submit { width: 100%; background-color: var(--primary-color); color: var(--white); padding: 14px; border: none; border-radius: 30px; font-size: 1.05rem; font-weight: bold; cursor: pointer; transition: background-color 0.3s; }
+    .btn-submit { display: block; width: 100%; background-color: var(--primary-color); color: var(--white); padding: 14px; border: none; border-radius: 30px; font-size: 1.05rem; font-weight: bold; cursor: pointer; text-align: center; text-decoration: none; transition: background-color 0.3s; }
     .btn-submit:hover { background-color: var(--secondary-color); }
     footer { background-color: var(--secondary-color); color: var(--white); text-align: center; padding: 40px 20px; font-size: 0.9rem; line-height: 1.8; }
     footer p { margin-bottom: 5px; opacity: 0.9; }
@@ -100,7 +100,6 @@
     <a href="#chi-sono" class="btn">Scopri di più</a>
   </div>
   <div class="hero-image">
-    <!-- Se decidi di riprovare con Postimages, sostituisci il link qua sotto (dentre le virgolette) con il nuovo Link Diretto -->
     <img src="https://i.postimg.cc/jdNp1Vxy/veronicamurilli-4350.jpg">
   </div>
 </section>
@@ -115,7 +114,7 @@
       <p>La mia storia con la fotografia inizia da lontano, quando ero piccolina. Di nascosto, rubavo la Polaroid di mamma e scattavo foto a destra e a sinistra... peccato solo che fosse senza carta fotografica! Ma l'istinto di catturare il mondo era già lì, forte e precoce.</p>
       <p>A 15 anni è arrivata la mia prima vera macchina fotografica, una Panasonic Lumix. Ero felicissima, la portavo sempre con me. Nel 2012, dopo un periodo in cui avevo messo questa passione da parte, un regalo ha riacceso la scintilla: ho ricominciato a divertirmi scattando foto ad amici e parenti, sentendo che quel fuoco non si era mai spento.</p>
       <p>Per tanti anni ho lavorato come barista, ma sentivo che la mia strada era un'altra. Un giorno, dopo una discussione con la mia titolare, ho preso la decisione più difficile e coraggiosa della mia vita: lasciare il lavoro fisso per investire sul mio sogno. Non è stato facile per nulla. Con i pochi risparmi che avevo messo da parte ho pagato un corso base di fotografia e ho iniziato a fare pratica fotografando le mie nipotine. È stato lì, tra le loro risate e i loro giochi, che ho capito quale sarebbe stato il mio posto nel mondo: <strong>diventare una fotografa di famiglia</strong>.</p>
-      <p>Oggi amo catturare la spontaneità dei gesti, le risate improvvise e la bellezza autentica dei moments trascorsi insieme. Non mi piacciono le pose rigide o i programmi scritti sulla pietra: preferisco entrare in punta di piedi nelle vostre storie e fermare nel tempo i vostri ricordi più veri.</p>
+      <p>Oggi amo catturare la spontaneità dei gesti, le risate improvvise e la bellezza autentica dei moments trascorsi insieme. Non mi piacciono le pose rigidità o i programmi scritti sulla pietra: preferisco entrare in punta di piedi nelle vostre storie e fermare nel tempo i vostri ricordi più veri.</p>
       <p class="signature">Ti aspetto dietro l'obiettivo,<br>Veronica</p>
     </div>
   </div>
@@ -177,7 +176,7 @@
       </div>
     </div>
     <div class="contact-form-container">
-      <form class="contact-form" onsubmit="event.preventDefault(); alert('Grazie per aver scritto! Ti risponderò prestissimo.');">
+      <form class="contact-form" onsubmit="event.preventDefault();">
         <div class="form-group">
           <label for="name">Come ti chiami?</label>
           <input type="text" id="name" placeholder="Il tuo nome" required>
@@ -190,7 +189,8 @@
           <label for="message">Raccontami la tua idea...</label>
           <textarea id="message" rows="5" placeholder="Parlami di voi, dei tuoi bimbi o del tipo di servizio che stai cercando" required></textarea>
         </div>
-        <button type="submit" class="btn-submit">Invia il messaggio</button>
+        <!-- Il pulsante ora apre direttamente un'email indirizzata a te -->
+        <a href="mailto:murilliveronica@gmail.com?subject=Richiesta informazioni dal sito" class="btn-submit">Invia il messaggio via Email</a>
       </form>
     </div>
   </div>
